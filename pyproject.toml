@@ -1,7 +1,7 @@
 [project]
-name = "stock-watcher"
+name = "playground"
 version = "0.1.0"
-description = "Inventory items that notify weakly-referenced stock watchers."
+description = "A collection of small Python projects, experiments, and code snippets."
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = []
