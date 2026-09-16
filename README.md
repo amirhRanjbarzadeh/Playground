@@ -7,6 +7,7 @@ A collection of small Python projects, experiments, and code snippets that don't
 | Project | Description |
 | --- | --- |
 | [`stock_watcher`](src/stock_watcher/) | Inventory items that notify stock watchers when their quantity changes. Watchers are held by weak reference, so an item never keeps a watcher alive. |
+| [`commerce_platform`](src/commerce_platform/) | Products that store prices as integer cents, validating on assignment so money never round-trips through a float. |
 
 Loose experiments and snippets live in `scratch/`, which is gitignored.
 
