@@ -8,6 +8,7 @@ A collection of small Python projects, experiments, and code snippets that don't
 | --- | --- |
 | [`stock_watcher`](src/stock_watcher/) | Inventory items that notify stock watchers when their quantity changes. Watchers are held by weak reference, so an item never keeps a watcher alive. |
 | [`commerce_platform`](src/commerce_platform/) | Products that store prices as integer cents, validating on assignment so money never round-trips through a float. |
+| [`commerce_engine`](src/commerce_engine/) | Interned, immutable ISO 4217 currencies whose identity survives `copy` and `pickle`, plus a `PaymentMethod` factory that dispatches on kind without misfeeding its subclasses' `__init__`. |
 
 Loose experiments and snippets live in `scratch/`, which is gitignored.
 
