@@ -12,6 +12,7 @@ from commerce_engine.money import (
     WalletPayment,
 )
 
+
 def test_same_code_is_same_object() -> None:
     assert Currency("USD") is Currency("USD")
 
@@ -82,6 +83,7 @@ def test_non_string_code_raises_type_error() -> None:
     with pytest.raises(TypeError):
         Currency(840)  # type: ignore[arg-type]
 
+
 def test_cannot_rebind_existing_attribute() -> None:
     usd = Currency("USD")
     with pytest.raises(AttributeError):
@@ -131,6 +133,7 @@ def test_pickle_round_trip_inside_a_container() -> None:
 
 def test_currency_is_hashable_and_usable_as_a_key() -> None:
     assert {Currency("USD"): 1}[Currency("usd")] == 1
+
 
 def test_factory_returns_card_payment() -> None:
     method = PaymentMethod("card", last4="4242", holder="A. Ranjbar")
